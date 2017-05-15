@@ -391,6 +391,9 @@ class ReaderActivity : BaseRxActivity<ReaderPresenter>() {
         subscriptions += preferences.showPageNumber().asObservable()
                 .subscribe { setPageNumberVisibility(it) }
 
+        subscriptions += preferences.showClock().asObservable()
+                .subscribe { setClockVisibility(it) }
+
         subscriptions += preferences.fullscreen().asObservable()
                 .subscribe { setFullscreen(it) }
 
@@ -426,6 +429,10 @@ class ReaderActivity : BaseRxActivity<ReaderPresenter>() {
 
     private fun setPageNumberVisibility(visible: Boolean) {
         page_number.visibility = if (visible) View.VISIBLE else View.INVISIBLE
+    }
+
+    private fun setClockVisibility(visible: Boolean) {
+        clock.visibility = if (visible) View.VISIBLE else View.INVISIBLE
     }
 
     private fun setFullscreen(enabled: Boolean) {

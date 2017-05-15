@@ -41,6 +41,8 @@ class PreferencesHelper(val context: Context) {
 
     fun showPageNumber() = rxPrefs.getBoolean(Keys.showPageNumber, true)
 
+    fun showClock() = rxPrefs.getBoolean(Keys.showClock, false)
+
     fun fullscreen() = rxPrefs.getBoolean(Keys.fullscreen, true)
 
     fun keepScreenOn() = rxPrefs.getBoolean(Keys.keepScreenOn, true)

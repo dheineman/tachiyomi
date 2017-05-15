@@ -166,6 +166,12 @@
         android:text="@string/pref_show_page_number"/>
 
     <android.support.v7.widget.SwitchCompat
+        android:id="@+id/show_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_show_clock"/>
+
+    <android.support.v7.widget.SwitchCompat
         android:id="@+id/crop_borders"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

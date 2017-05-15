@@ -78,6 +78,11 @@ class SettingsReaderController : SettingsController() {
             defaultValue = true
         }
         switchPreference {
+            key = Keys.showClock
+            titleRes = R.string.pref_show_clock
+            defaultValue = false
+        }
+        switchPreference {
             key = Keys.cropBorders
             titleRes = R.string.pref_crop_borders
             defaultValue = false

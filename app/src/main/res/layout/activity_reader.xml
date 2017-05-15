@@ -32,6 +32,15 @@
             android:background="?android:attr/colorBackground"
             android:padding="4dp"/>
 
+        <TextClock
+            android:id="@+id/clock"
+            style="@style/TextAppearance.Regular.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:background="?android:attr/colorBackground"
+            android:padding="4dp"/>
+
     </FrameLayout>
 
     <FrameLayout

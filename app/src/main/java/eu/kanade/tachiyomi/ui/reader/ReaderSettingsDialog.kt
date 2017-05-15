@@ -79,6 +79,11 @@ class ReaderSettingsDialog : DialogFragment() {
             preferences.showPageNumber().set(isChecked)
         }
 
+        show_clock.isChecked = preferences.showClock().getOrDefault()
+        show_clock.setOnCheckedChangeListener { v, isChecked ->
+            preferences.showClock().set(isChecked)
+        }
+
         fullscreen.isChecked = preferences.fullscreen().getOrDefault()
         fullscreen.setOnCheckedChangeListener { v, isChecked ->
             preferences.fullscreen().set(isChecked)

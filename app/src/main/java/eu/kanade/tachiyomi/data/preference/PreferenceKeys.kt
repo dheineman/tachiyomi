@@ -13,6 +13,8 @@ object PreferenceKeys {
 
     const val showPageNumber = "pref_show_page_number_key"
 
+    const val showClock = "pref_show_clock_key"
+
     const val fullscreen = "fullscreen"
 
     const val keepScreenOn = "pref_keep_screen_on_key"
